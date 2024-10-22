@@ -3,6 +3,6 @@ from . import views # To be able to add views functions to projects url
 
 
 urlpatterns = [
-    path('projects/', views.projects, name='projects'),
+    path('', views.projects, name='projects'),
     path('project/<str:pk>/', views.project, name='project'),
 ]
